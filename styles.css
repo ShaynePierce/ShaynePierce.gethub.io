@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+H1, h2 {
+  background-color: #AFAA72;
+  color: #F9C798;
+  font-family: 'Merriweather Sans', 'Arial', serif;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 1.1em;
+  margin-bottom: -2px;
+}
+
+body {
+  background-color: #266077;
+  padding: 1em;
+  font-family: 'Bitter', 'Arial', serif;
+}
