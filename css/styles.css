@@ -20,8 +20,9 @@ header {
 
 footer {
   background-color: #e98030;
-  color: #2364AA;
+  color: #1b4b80;
   font-family: 'Merriweather Sans', 'Arial', serif;  
+  font-size: 15px;
   padding: 20px;
   line-height: 1.1em;
   margin-bottom: -2px;
