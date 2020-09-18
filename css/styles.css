@@ -1,14 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Oxygen');
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
-H1, h2 {
-  background-color: #AFAA72;
-  color: #F9C798;
-  font-family: 'Merriweather Sans', 'Arial', serif;
+.content {
+  background-color: #70ACBD;
+  max-width: 960px;
   border-radius: 20px;
+  position: relative;
+}
+
+header {
+  background-color: #FEC601;
+  color: #2364AA;
+  font-family: 'Merriweather Sans', 'Arial', serif;  
   padding: 20px;
   line-height: 1.1em;
   margin-bottom: -2px;
+  border-radius: 10px 10px 0 0;
+}
+
+footer {
+  background-color: #e98030;
+  color: #2364AA;
+  font-family: 'Merriweather Sans', 'Arial', serif;  
+  padding: 20px;
+  line-height: 1.1em;
+  margin-bottom: -2px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+main {
+  padding: 20px;
+  line-height: 1.1em;
+  margin-bottom: -2px;
+  font-family: 'Bitter', 'Arial', serif; 
+}
+
+.portrait {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.4);  
+}
+
+H1, h2 {
+  font-family: 'Merriweather Sans', 'Arial', serif;  
+  padding: 20px;
+  line-height: 1.1em;
+}
+
+#last-updated-span {
+  color: yellow;
 }
 
 body {
