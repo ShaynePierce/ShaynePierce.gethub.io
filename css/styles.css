@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
 .content {
-  background-color: #b1dde9;
+  background-color: #c8e6ee;
   max-width: 960px;
   border-radius: 20px;
   position: relative; 
@@ -19,7 +19,7 @@ header {
 }
 
 footer {
-  background-color: #f1b586;
+  background-color: #fdd4b5;
   color: #2364AA;
   font-family: 'Merriweather Sans', 'Arial', serif;  
   padding: 20px;
