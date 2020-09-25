@@ -1,0 +1,81 @@
+html {
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    /*background-color: orangered;
+    color: navy;*/
+    background-color: #FEC601;
+    color: #2364AA;
+    box-shadow: 5px 5px 10px 1px rgba(200, 200, 200, 0.7);  
+}
+
+header > h1, header > h2  {
+    padding: 10px;    
+}
+
+main {
+    display: block;
+}
+
+div {    
+    padding: 1em;
+}
+
+.photo-title {
+    font-family: 'Philosopher', sans-serif;
+    height: 30%;
+} 
+
+.design-principle {
+    margin: 0px 0px 20px 0px;
+    border: 1px solid grey;
+    padding: 0;
+}
+
+.design-principle-details {
+    height: 180px;
+    background-color: rgb(218, 224, 231);
+}
+
+.deisgn-principle-name {
+    margin: 0;
+    height: 70%;
+}
+
+.panel_header {
+    height: 10em;
+    padding: 5px;
+    background-color: rgb(48, 48, 141);
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #640000;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.1em;
+    margin-bottom: -2px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+
+  footer a {
+    color: #c8e6ee;
+  }
+
+  #last-updated-span {
+    color: yellow;
+  }
+  

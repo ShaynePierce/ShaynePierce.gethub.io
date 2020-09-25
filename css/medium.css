@@ -1,0 +1,12 @@
+@media only screen and (min-width: 620px) { 
+    .content, main, footer, header {      
+      position: relative; 
+    }
+  
+    .portrait {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      Width: auto;
+    }
+  } 

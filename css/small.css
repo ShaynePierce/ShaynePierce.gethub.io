@@ -5,7 +5,8 @@
   background-color: #c8e6ee;
   max-width: 960px;
   border-radius: 20px;
-  position: relative; 
+  display: block;
+  height: auto;
 }
 
 header {
@@ -44,13 +45,15 @@ main {
   font-size: medium;
 }
 
-.portrait {
-  position: absolute;
-  right: 30px;
-  top: 20px;
+.portrait {    
+  position: relative;
+  top: 15px;
+  right: -15%;
+  object-fit: cover;
+  width: 70%;
   border-radius: 5px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.4);  
-}
+}  
 
 H1, h2 {
   font-family: 'Merriweather Sans', 'Arial', serif;  
@@ -72,19 +75,3 @@ body {
   font-size: large;
   font-weight: bold;
 }
-
-@media screen and (max-width: 700px) { 
-  .content, main, footer, header {      
-    display: block;
-    height: auto;
-  }
-
-  .portrait {    
-    position: relative;
-    top: 15px;
-    left: 15%;
-    object-fit: cover;
-    width: 70%;
-  }
-
-} 

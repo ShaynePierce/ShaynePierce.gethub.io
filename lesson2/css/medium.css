@@ -1,0 +1,13 @@
+@media only screen and (min-width: 32.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    .design-principle {
+        margin: 10px 10px 10px 10px;
+        box-shadow: 5px 5px 10px 1px rgba(200, 200, 200, 0.7);  
+    }
+    
+}
