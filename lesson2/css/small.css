@@ -1,5 +1,6 @@
 html {
     font-family: 'Roboto Slab', serif;
+    max-width: 960px;
 }
 
 header {
@@ -68,11 +69,11 @@ footer {
     text-align: center;
   }
 
-  footer a {
-    color: #c8e6ee;
-  }
+a {
+color: #c8e6ee;
+}
 
-  #last-updated-span {
-    color: yellow;
-  }
+#last-updated-span {
+color: yellow;
+}
   
