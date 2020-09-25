@@ -73,5 +73,6 @@ body {
 
 #assignment-list {
   font-size: large;
+  line-height: 1.1em;
   font-weight: bold;
 }
