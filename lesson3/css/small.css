@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@500&display=swap');
+
+:root {
+    --primary-color: #1d3557ff;
+    --secondary-color: #ff0000ff;
+    --primary-background-color: #f1faeeff;
+    --secondary-background-color: #a8dadcff;
+    --accent-color: #457b9dff;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+
+.colors th {
+    background-color: #999;
+}
+.colors td{
+    width: 20%;
+    height: 3em;
+}
+
+.primary {
+    color: white;
+    background-color: var(--primary-color);
+}
+.secondary {
+    color: black;
+    background-color: var(--secondary-color);
+}
+.primary-background {
+    color: var(--primary-color);
+    background-color: var(--primary-background-color);
+}
+.secondary-background {
+    color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
+}
+.accent {
+    color: black;
+    background-color: var(--accent-color);
+}
+
+.color {
+    padding: 1em;
+}
+
+
+.color-header, .color-block {
+    text-align: center;
+    padding: 1em;
+    border: 1px solid darkslategrey;    
+}
+
+.color-header {
+    background-color: #999;
+}
+
+
+.color-main {
+    padding: 10px;
+}
+
+.color-explain {
+    width: 100%;
+}
+
+.typography-main {
+    display: inline-block;
+    padding: 20px;
+}
+
+.primary-font, .primary-font-explain  {
+    color: var(--primary-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.secondary-font, .secondary-font-explain  {
+    color: var(--secondary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html {
+    font-family: 'Roboto Slab', serif;
+    max-width: 960px;
+}
+
+
+html a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #FEC601;
+    color: #2364AA;
+    box-shadow: 5px 5px 10px 1px rgba(200, 200, 200, 0.7);  
+}
+
+header > h1, header > h2  {
+    padding: 10px;    
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #bbb;
+	color: #36454f;
+}
+.active {
+    color: yellow;
+    background-color: rgb(8, 8, 36);
+}
+
+main {
+    display: block;
+}
+
+section {
+    height: auto;    
+    width: auto;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    border: 1px solid grey;
+    box-shadow: 5px 5px 10px 1px rgba(200, 200, 200, 0.7);  
+}
+
+section p {
+    padding: 5px;
+}
+
+.label {
+    color: blue;
+}
+
+.answer {
+    color: red;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+footer {
+    background-color: #640000;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.1em;
+    margin-bottom: -2px;
+    text-align: center;
+}
+
+a {
+    color: #c8e6ee;
+}
+
+#last-updated-span {
+    color: yellow;
+}
+
+
+  

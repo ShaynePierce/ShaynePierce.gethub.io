@@ -1,0 +1,40 @@
+@media only screen and (min-width: 32.5em) {
+    main {
+        display: flex;        
+    }
+    
+    section {
+        margin: 20px 0px 20px 0px;
+        border: 1px solid grey;
+        flex: 1 1 100%;
+        margin: 10px 10px 10px 10px;
+        box-shadow: 5px 5px 10px 1px rgba(200, 200, 200, 0.7);  
+    }
+    
+    img {
+        height: 50px;
+        width: auto;
+    }
+
+    .color-table {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .color {
+        max-width: 250px;
+        min-width: 100px;
+        flex: 1 1 100px;
+    }
+    
+    .color-header {
+        height: 2em;
+    }
+
+    .color-block {
+        height: 3em;
+    }
+    
+	nav ul { display: flex; }
+    nav ul li { flex: 1 1 100%; }
+}

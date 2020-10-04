@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Oxygen');
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
+html a {
+  text-decoration: none;
+}
+
 .content {
   background-color: #c8e6ee;
   max-width: 960px;
   border-radius: 20px;
   display: block;
   height: auto;
+  text-decoration: none;
 }
 
 header {
