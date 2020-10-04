@@ -29,7 +29,7 @@
 }
 .secondary {
     color: black;
-    background-color: var(--secondary-color);
+    background-color: #580000;
 }
 .primary-background {
     color: var(--primary-color);
