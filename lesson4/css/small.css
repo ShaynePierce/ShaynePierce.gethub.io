@@ -6,11 +6,7 @@
     --primary-background-color: #f1faeeff;
     --secondary-background-color: #a8dadcff;
     --accent-color: #457b9dff;
-}
-
-html {
     font-family: 'Ubuntu', serif;
-    max-width: 960px;
 }
 
 html a {
@@ -43,7 +39,6 @@ nav {
     background-color: #ccc;
     font-family: 'Roboto', serif;
     margin: 0 auto;
-    max-width: 960px;
 }
 
 .navigation {

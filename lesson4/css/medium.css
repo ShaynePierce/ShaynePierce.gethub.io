@@ -33,8 +33,17 @@
     .navigation li { 
         display: block;
         flex: 1 1 100%; 
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
         border: none;
         border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    .navigation li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
     }
 
     .navigation li:first-child { 
