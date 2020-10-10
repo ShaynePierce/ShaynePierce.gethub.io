@@ -2,6 +2,11 @@ function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("showmenu");
 }
 
+/*the following function closes the menu if resized - onresize event on the body element*/
+function toggleMenuClosedOnWindowReSize(){
+  document.getElementsByClassName("navigation")[0].classList.remove("showmenu");
+}
+
 function getWeekday() {
     var dayNameList = [
         'Sunday',

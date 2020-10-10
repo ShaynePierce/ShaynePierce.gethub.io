@@ -7,10 +7,13 @@
     --secondary-background-color: #a8dadcff;
     --accent-color: #457b9dff;
     font-family: 'Ubuntu', serif;
+    font-size: 16px;
+    max-width: 60rem;
 }
 
 html a {
     text-decoration: none;
+    align-content: center;
 }
 
 header {
@@ -22,13 +25,16 @@ header {
     color: var(--primary-color);
 }
 
+.tagline {
+    padding: 0.5rem 0;
+}
+
 header h1, header h2  {
     padding: 0;    
 }
 
 main {
     display: block;
-    padding: 1rem;
 }
 
 main h2 {
@@ -103,7 +109,6 @@ footer {
 .contentbox {
     box-sizing: border-box;
     padding: 1rem;
-    margin: 10px;
     width: 100%;
     height: auto;
     border: 1px dashed gray;
