@@ -15,11 +15,6 @@ html a {
     align-content: center;
 }
 
-body {
-    max-width: 70rem;
-    margin: auto;
-}
-
 header {
 	padding: 5px 0;
 	display: flex;
@@ -38,7 +33,9 @@ header h1, header h2  {
 }
 
 main {
-    display: block;
+    max-width: 70rem;
+    margin: auto;
+    /*display: block;*/
 }
 
 main h2 {
@@ -103,9 +100,11 @@ img {
 }
 
 footer {
+    max-width: 70rem;
+    margin: auto;
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
-    padding: 20px;
+    padding: 20px 0;
     line-height: 1.1em;
     text-align: center;
 }
