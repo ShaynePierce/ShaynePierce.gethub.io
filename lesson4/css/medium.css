@@ -9,8 +9,12 @@
         flex: 1 1 100%; 
         overflow: hidden;
         border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
     }
+
+    .navigation li:not(:last-child) { 
+        border-right: 1px solid rgba(69,123,157,0.3);    
+    }
+
 
     .navigation li a {
         white-space: nowrap;
@@ -33,7 +37,6 @@
     }
 
     img {
-        width: auto;
         height: 8rem;
     }
 
