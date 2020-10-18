@@ -58,8 +58,8 @@
         position: absolute;
         top: 25px;
         left: 25px;
-        background: radial-gradient(var(--primary-background-color), var(--secondary-background-color));
-        border: 1px solid #000;
+        background: radial-gradient(#f1faeeff, #a8dadcff);
+        border: 1px solid black;
         padding: 1.5rem;
         box-shadow: 0 0 30px #111;
         opacity: .8;
