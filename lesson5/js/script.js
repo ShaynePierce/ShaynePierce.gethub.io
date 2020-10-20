@@ -51,6 +51,6 @@ function getFullDateProper() {
 document.getElementsByClassName('copyright-year')[0].innerHTML = new Date().getFullYear();
 document.getElementsByClassName('current-date')[0].innerHTML = getFullDateProper();
 
-if (new Date().getDay() != 6) { //5 for final 
+if (new Date().getDay() != 5) { //5 for final 
   document.querySelector("aside").style.display = 'none';
 }
