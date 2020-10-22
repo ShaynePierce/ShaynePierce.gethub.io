@@ -168,6 +168,10 @@ footer {
     width: 100%;
 }
 
+.map h4 {
+    display: none;
+}
+
 .contact-map {
     padding: 10px 0 0 0;
 }
