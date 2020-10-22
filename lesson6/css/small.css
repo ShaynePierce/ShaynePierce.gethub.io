@@ -74,6 +74,7 @@ main h2 {
 
 .hero-container picture img {
     width: 100%;
+    display: block;
 }
 
 .weather-summary {   
@@ -98,6 +99,7 @@ main h2 {
 
 .forecast-container img {
     max-width: 100%;
+    display: block;
 }
 
 nav {
@@ -166,6 +168,7 @@ footer {
 
 .map img {
     width: 100%;
+    display: block;
 }
 
 .map h4 {
@@ -210,6 +213,7 @@ article div, article h3, article p {
 
 article img {
     width: 100%;
+    display: block;
 }
 
 article picture {
