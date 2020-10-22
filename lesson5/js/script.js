@@ -54,3 +54,7 @@ document.getElementsByClassName('current-date')[0].innerHTML = getFullDateProper
 if (new Date().getDay() != 5) { //5 for final 
   document.querySelector("aside").style.display = 'none';
 }
+
+if (true) {
+  document.querySelector("wind-chill").innerHTML = 'Shayne';
+}

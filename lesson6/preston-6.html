@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect 73&deg; - Preston Idaho</title>
+    <meta name="description" content="Weather and Activities for Preston Idaho.">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <aside>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</aside>
+    <header>
+      <picture>
+        <img class="logo" src="images/weathericon.png" alt="Perfect 73 logo">
+      </picture>
+      <section>
+        <h1>Perfect 73&deg;</h1>
+        <div class="tagline">Where the weather is always a perfect 73 degrees.</div>
+      </section>
+    </header>
+    <nav class="clearfix">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="hero-container">
+        <picture>
+          <source media="(max-width: 240px)" srcset="images/Franklin240.jpg">
+          <source media="(max-width: 480px)" srcset="images/Franklin480.jpg">
+          <source media="(min-width: 481px)" srcset="images/Franklin960.jpg">
+          <img src="images/Franklin960.jpg" alt="Hero Image Preston Idaho">
+        </picture>
+        <div class="weather-summary">
+          <h3>Weather Summary</h3>
+          <p>Current: <span class="current-condition">Sunny</span></p>          
+          <p>Temperature: <span class="current-temp">73&deg;</span></p>    
+          <p>Wind: <span class="wind-speed">5 mph</span></p>          
+          <p>Wind Chill: <span class="wind-chill">none</span></p>      
+          <p>Chance of Rain: <span class="chance-of-rain">21%</span></p>          
+        </div>
+      </div>
+      <div class="forecast-container">
+        <div class="forecast day-1">
+          <h4>Tomorrow</h4>          
+          <p class="weather-date">10/16</p>
+          <img src="images/sunny.png" alt="">
+          <p class="weather-word">Sunny</p>
+        </div>
+        <div class="forecast day-2">
+          <h4>Saturday</h4>          
+          <p class="weather-date">10/17</p>
+          <img src="images/partly-cloudy.png" alt="">
+          <p class="weather-word">Partly Coudy</p>
+        </div>
+        <div class="forecast day-3">
+          <h4>Sunday</h4>          
+          <p class="weather-date">10/18</p>
+          <img src="images/thunderstorms.png" alt="">
+          <p class="weather-word">Thunderstorms</p>
+        </div>
+        <div class="forecast day-4">
+          <h4>Monday</h4>          
+          <p class="weather-date">10/19</p>
+          <img src="images/heavy-rains.png" alt="">
+          <p class="weather-word">Heavy Rain</p>
+        </div>
+        <div class="forecast day-5">
+          <h4>Tuesday</h4>          
+          <p class="weather-date">10/20</p>
+          <img src="images/snow.png" alt="">
+          <p class="weather-word">Snow</p>
+        </div>
+      </div>
+      <article>
+        <picture><img src="images/articlephoto.jpg" alt="Setting Sun" ></picture>
+        <h3>Article Title</h3>
+        <p>Author: Shayne Pierce</p>
+        <div class="article-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, accusantium. Animi hic dolorem enim similique vel molestiae ex, voluptatum eligendi veniam exercitationem aliquam aspernatur quisquam deserunt magni voluptates veritatis neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempore voluptatem recusandae reprehenderit veritatis, illo praesentium fugit sequi dignissimos repellendus doloribus architecto, explicabo labore nemo adipisci sunt asperiores dolor at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem natus error maxime perferendis a minima expedita aspernatur. Ut error placeat quis. Tempora provident iure libero veritatis debitis placeat et saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sequi inventore, optio, eligendi sit tenetur molestiae tempore magni facilis molestias consequatur adipisci impedit. Laborum dolorem porro, culpa eius sequi placeat?</div>
+      </article>
+    </main>
+    <footer>
+      <div class="contact-map">
+        <section class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Shayne Pierce</p>
+          <p>&#9993; shayne.pierce@gmail.com</p>
+          <p>&phone; 801-830-0472</p>
+          <p>&#9872; Pleasant Grove, UT</p>
+        </section>
+        <section class="map">
+          <img src="images/prestonmap-resized.png" alt="Map Preston, Idaho">
+        </section>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Perfect 73&deg; | Attributions | Shayne Pierce</p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({google: {families: ['Roboto','Ubuntu']}});
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>
