@@ -4,4 +4,14 @@
         height: 100%;
     }
     
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;    
+    }
+
+    figure:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
 }

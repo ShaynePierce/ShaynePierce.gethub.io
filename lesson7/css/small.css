@@ -190,7 +190,20 @@ footer {
 
 .footer-bar {
     padding: 10px 0;
-    background-color: lightgray;    
+    background-color: lightgray;        
+}
+
+.footer-bar a:link {
+    color: var(--secondary-color);
+}
+
+.footer-bar a:visited {
+    color: var(--secondary-color);
+}
+
+.footer-bar a:hover {
+    color: blue;
+    font-weight: bold;    
 }
 
 .contentbox {
@@ -221,3 +234,36 @@ article picture {
     margin: 0;
 }
 
+.gallery {
+    display: block;
+}
+
+figure {
+    max-width: 300px;
+    text-align: center;
+    text-indent: 0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    position: relative;
+    box-sizing: border-box;
+    /*box-shadow: 5px 5px 10px;
+    border-radius: 5px;*/
+}
+
+figure img {
+    width: 100%;
+    display: block;
+    filter: blur(0em);
+    transition: filter 3s;
+}
+
+figcaption {
+    padding: 5px;
+
+}
+
+figure img[data-src] {
+    filter: blur(0.2em);
+}
