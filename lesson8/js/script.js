@@ -51,7 +51,8 @@ function getFullDateProper() {
 document.getElementsByClassName('copyright-year')[0].innerHTML = new Date().getFullYear();
 document.getElementsByClassName('current-date')[0].innerHTML = getFullDateProper();
 
-if (new Date().getDay() != 5) { //5 for final 
-  document.querySelector("aside").style.display = 'none';
+var pancakeExists = document.querySelector("aside.pancakes") !== null;
+if (pancakeExists && new Date().getDay() != 5) {
+  document.querySelector("aside.pancakes").style.display = 'none';
 }
 

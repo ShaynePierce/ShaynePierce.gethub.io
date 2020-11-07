@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect 73&deg; - Storm Center</title>
+    <meta name="description" content="User submitted storm information.">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="logo" src="images/weathericon.png" alt="Perfect 73 logo">
+      </picture>
+      <section>
+        <h1>Perfect 73&deg;</h1>
+        <div class="tagline">Where the weather is always a perfect 73 degrees.</div>
+      </section>
+    </header>
+    <nav class="clearfix">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2>Storm Center - Report a Storm</h2>
+      <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="5554441234" required></label>
+            <label class="top">Zipcode* <input type="number" name="zipcode" required min="10000" max="99999"></label>
+          </fieldset>
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">Date of Storm <input type="date" name="stormdate"></label>
+          <label class="top">Storm Type <input list="storm-types" name="stormtype" />
+              <datalist id="storm-types">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+            </datalist>
+          </label>
+          <label class="severity">
+            <span class="storm-severity-label-text">Storm Severity: </span>
+            <span class="storm-severity-value">5</span>
+            <input type="range" name="storm-severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <datalist id="tickmarks">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </datalist>
+          </label>
+          <label class="top">Storm Region 
+            <select name="storm-region">
+                <option value="" selected disabled="disabled"> Select Region...&#9662;</option>
+                <option value="preston"> Preston</option>
+                <option value="soda"> Soda Springs</option>
+                <option value="fish"> Fish Haven</option>
+            </select>
+          </label>
+          <div>Are you in danger?</div>
+          <label class="sbs"><input type="radio" name="in-danger" value="yes"> Yes</label>
+          <label class="sbs"><input type="radio" name="in-danger" value="maybe"> Maybe</label>
+          <label class="sbs"><input type="radio" name="in-danger" value="no"> No</label>
+          <label class="top">Additional Information <textarea class="add-info" name="additional-info"></textarea></label>
+        </fieldset>  
+        <input type="submit" value="Report My Storm" class="submitBtn">
+      </form>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Perfect 73&deg; | <a href="../index.html">Shayne Pierce</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({google: {families: ['Roboto','Ubuntu']}});
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/stormcenter.js"></script>
+  </body>
+</html>

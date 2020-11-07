@@ -1,0 +1,29 @@
+body {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+picture {
+    width: 100%;
+    margin: 0 10px;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /*border: 3px solid #333333;*/
+    box-shadow: 5px 5px 10px;
+    border-radius: 5px;
+}
+
+picture img[data-src] {
+    filter: blur(0.2em);
+}
+  
+picture img {
+    filter: blur(0em);
+    transition: filter 3s;
+}
