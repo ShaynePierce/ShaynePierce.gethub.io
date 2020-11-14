@@ -106,6 +106,7 @@ main h2 {
 nav {
     background-color: #ccc;
     font-family: 'Roboto', serif;
+    font-size: clamp(0.7rem, 0.6vw + 0.6rem, 1.5rem);    
     margin: 0 auto;
 }
 
@@ -373,4 +374,145 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+.featured-business {
+    box-sizing: border-box;
+    background-color: rgb(219, 200, 219);
+    padding: 10px 10px 20px 10px;    
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+
+.featured-business h3 {
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: #222;
+    margin: 10px;
+}
+
+.featured-business h3 span {
+    color: var(--primary-color);
+}
+
+.featured-business picture {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5); 
+    display: block;
+    width: 94%;
+    max-width: 480px;
+    margin: 20px auto 5px auto;
+    position: relative;
+}
+
+.featured-business picture img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.featured-business ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 2px;
+    font-size: clamp(0.7rem, 0.7vw + 0.7rem, 1.56rem);
+}
+
+.cities {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.city {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    background-color: gainsboro;
+}
+
+.city picture {
+    box-sizing: border-box;
+    display: block;
+    order: 1;
+}
+
+.city .city-info {
+    box-sizing: border-box;
+    display: block;
+    order: 2;
+}
+
+.city:nth-child(even) picture {
+    order: 2;
+}
+
+.city:nth-child(even) .city-info {
+    order: 1;
+}
+
+.city-info h2 {
+    box-sizing: border-box;
+    background-color: #a8dadcff;
+    color: #1d3557ff;
+    font-family: 'Ubuntu', serif;
+    font-size: clamp(0.9rem, 1vw + 1rem, 2.2rem);
+}
+
+.city-info .motto {
+    box-sizing: border-box;
+    color: #1d3557ff;
+    font-family: 'Ubuntu', serif;
+    font-size: clamp(0.7rem, 0.7vw + 0.8rem, 1.5rem);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.city-info p {
+    font-size: clamp(0.6rem, 0.7vw + 0.7rem, 1.4rem);
+    box-sizing: border-box;
+    padding: 10px max(10%, 10px);
+}
+
+.city-data {
+    font-weight: bold;
+}
+
+.city picture img {
+    display: block;
+    width: 100%;    
+}
+
+/*This is for extreme small*/
+@media only screen and (max-width: 379px) {
+    .city {
+        align-content: center;
+    }
+
+    .city picture {
+        order: 1;
+    }
+    
+    .city .city-info {
+        order: 2;
+    }
+
+    .city:nth-child(even) picture {
+        order: 1;
+    }
+    
+    .city:nth-child(even) .city-info {
+        order: 2;
+    }
+
+    .city picture img {
+        display: block;
+        width: 50%;   
+        margin: 0 auto;
+    }       
 }
