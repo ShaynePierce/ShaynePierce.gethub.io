@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect 73&deg;</title>
+    <meta name="description" content="Your one-stop place to get weather and activities for several souther Idaho locations.">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <header>
+      <picture>
+        <img class="logo" src="images/weathericon.png" alt="Perfect 73 logo">
+      </picture>
+      <section>
+        <h1>Perfect 73&deg;</h1>
+        <div class="tagline">Where the weather is always a perfect 73 degrees.</div>
+      </section>
+    </header>
+    <nav class="clearfix">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <section class="cities"></section>
+      <Section class="featured-business">
+        <h3>Featured Business: <span class="business-name">Paul's Grocery</span></h3>
+        <div class="feature-details">
+          <picture>
+            <source media="(max-width: 250px)" srcset="images/pauls-grocery250.jpg">
+            <source media="(min-width: 251px)" srcset="images/pauls-grocery480x320.jpg">
+            <img src="images/pauls-grocery480x320.jpg" alt="Picture of Pauls Grocery" >
+          </picture>        
+          <ul>
+            <li>Fresh Sandwiches</li>
+            <li>Grilled Items</li>
+            <li>Soft Drinks</li>
+            <li>Candy</li>
+            <li>Daily Specials</li>
+            <li>Hardware</li>
+            <li>Fishing Tackle</li>
+            <li>Bait</li>
+            <li>4 Convenient Locations</li>
+            <li>Phone: 208-555-1234</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="contact-map">
+        <section class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Shayne Pierce</p>
+          <p>&#9993; shayne.pierce@gmail.com</p>
+          <p>&phone; 801-830-0472</p>
+          <p>&#9872; Pleasant Grove, UT</p>
+        </section>
+        <section class="map">
+          <img src="images/prestonmap-resized.png" alt="Map Preston, Idaho">
+          <h4>Preston, Idaho Map</h4>
+        </section>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Perfect 73&deg; | <a href="../index.html">Shayne Pierce</a> | <a href="home-wireframe.html">Wireframes</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({google: {families: ['Roboto','Ubuntu']}});
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/cities.js"></script>
+  </body>
+</html>
