@@ -68,7 +68,9 @@ async function renderWeather(cityName) {
 
     newForecastDays.forEach(day => {
         newDate = new Date(day.dt_txt);
-        if (newDate.getDate() == new Date().getDate() + 1) {
+        if (newDate.getDate() == new Date().getDate()) {
+            dayDescrip = 'Today';
+        } else if (newDate.getDate() == new Date().getDate() + 1) {
             dayDescrip = 'Tomorrow';
         } else {
             dayDescrip = getWeekday(newDate.getDay());
