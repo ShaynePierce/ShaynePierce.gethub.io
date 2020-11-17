@@ -60,7 +60,7 @@ async function renderWeather(cityName) {
     let forecastDays = forecastData.list;
     let newForecastDays = forecastDays.filter(day => day.dt_txt.includes('18:00:00'));
 
-    console.log(newForecastDays);
+    //console.log(newForecastDays);
 
     let htmlstring = '';
     let newDate = new Date();

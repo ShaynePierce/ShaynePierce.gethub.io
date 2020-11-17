@@ -12,8 +12,10 @@ async function getJSON(requestURL) {
 }
 
 async function renderWeather() {
+    //console.log(weatherUrl);
+
     let weatherData = await getJSON(weatherUrl);
-    console.log(weatherData);
+    //console.log(weatherData);
 
     document.getElementById('current-temp').textContent = weatherData.main.temp;
 
