@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect 73&deg;</title>
     <meta name="description" content="Your one-stop place to get weather and activities for several souther Idaho locations.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">    
     <link rel="shortcut icon" href="../favicon2.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/small.css">
@@ -40,7 +42,7 @@
           <picture>
             <source media="(max-width: 250px)" srcset="images/pauls-grocery250.jpg">
             <source media="(min-width: 251px)" srcset="images/pauls-grocery480x320.jpg">
-            <img src="images/pauls-grocery480x320.jpg" alt="Picture of Pauls Grocery" >
+            <img src="images/pauls-grocery480x320.jpg" alt="Picture of Pauls Grocery" loading="lazy">
           </picture>        
           <ul>
             <li>Fresh Sandwiches</li>
@@ -67,8 +69,9 @@
           <p>&#9872; Pleasant Grove, UT</p>
         </section>
         <section class="map">
-          <img src="images/prestonmap-resized.png" alt="Map Preston, Idaho">
-          <h4>Preston, Idaho Map</h4>
+          <div class="map-responsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477162.8598707267!2d-111.73498111887461!3d42.13350395839597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605405945809!5m2!1sen!2sus" frameBorder="0" loading="lazy"></iframe>
+          </div>
         </section>
       </div>
       <div class="footer-bar">
@@ -76,10 +79,6 @@
         <p><span class="current-date"></span></p>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({google: {families: ['Roboto','Ubuntu']}});
-    </script>
     <script src="js/script.js"></script>
     <script src="js/cities.js"></script>
   </body>

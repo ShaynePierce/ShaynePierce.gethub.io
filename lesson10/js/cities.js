@@ -30,7 +30,7 @@ function addCity(cities, cityName) {
             htmlSegment =  `
                 <section class="city">                            
                     <picture>
-                        <img src="images/${city.photo}" alt="Photo of ${city.name}" >
+                        <img src="images/${city.photo}" alt="Photo of ${city.name}" loading="lazy">
                     </picture>
                     <div class="city-info">
                         <h2>${city.name}</h2>

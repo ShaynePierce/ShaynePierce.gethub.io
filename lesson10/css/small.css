@@ -172,11 +172,6 @@ footer {
     padding: 0;
 }
 
-.map img {
-    width: 100%;
-    display: block;
-}
-
 .map h4 {
     display: none;
 }
@@ -184,6 +179,28 @@ footer {
 .contact-map {
     padding: 10px 0 0 0;
 }
+
+.map-responsive{
+    margin-top: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    box-sizing: border-box;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
 
 .contact-info {
     padding: 0 0 10px 0;
@@ -491,22 +508,6 @@ form label.top input:required:valid {
     display: block;
     width: 100%;    
 }
-
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-
 
 /*This is for extreme small*/
 @media only screen and (max-width: 379px) {
