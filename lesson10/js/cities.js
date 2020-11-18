@@ -32,7 +32,7 @@ function addCity(cities, cityName) {
                     <picture>
                         <source media="(max-width: 240px)" srcset="images/240${city.photo}">
                         <source media="(min-width: 241px)" srcset="images/${city.photo}">
-                        <img src="images/${city.photo}" alt="Photo of ${city.name}" loading="lazy">
+                        <img src="images/${city.photo}" alt="Photo of ${city.name}">
                     </picture>
                     <div class="city-info">
                         <h2>${city.name}</h2>
