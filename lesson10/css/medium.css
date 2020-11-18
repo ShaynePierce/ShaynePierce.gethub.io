@@ -92,6 +92,12 @@
         grid-row: 1;
     }
 
+    .map-responsive{
+        margin-top: 10px;
+        margin-right: 10px;
+        border: 1px solid grey;
+    }    
+
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;

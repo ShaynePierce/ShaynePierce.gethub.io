@@ -181,10 +181,9 @@ footer {
 }
 
 .map-responsive{
-    margin-top: 10px;
-    margin-right: 10px;
+    display: block;
+    margin: 0;
     box-sizing: border-box;
-    border: 1px solid grey;
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
@@ -198,9 +197,8 @@ footer {
     height:100%;
     width:100%;
     position:absolute;
+    border: none; 
 }
-
-
 
 .contact-info {
     padding: 0 0 10px 0;
