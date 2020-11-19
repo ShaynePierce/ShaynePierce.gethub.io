@@ -29,6 +29,15 @@ function getWeekday(dayNum = 0) {
     return dayNameList[dayNum];
 }
 
+function toTitleCase(str) {
+    return str.replace(
+      /\w\S*/g,
+      function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      }
+    );
+  }
+
 async function renderWeather(cityName) {
     let key = '09c3a2bd1edd511d62c2dd195b57b417';
     let cityId = '5604473';
@@ -112,8 +121,8 @@ async function renderWeather(cityName) {
         `   <div class="forecast">
             <h4>${dayDescrip}</h4>          
             <p class="weather-date">${newDate.getMonth()+1}/${newDate.getDate()}</p>
-            <img src="images/${iconimg}" alt="${day.weather[0].description}">
-            <p class="weather-word">${day.weather[0].main}: ${Math.round(day.main.temp)}&deg;F</p>
+            <img src="images/${iconimg}" alt="${day.weather[0].description}" title="${day.weather[0].main}">
+            <p class="weather-word">${toTitleCase(day.weather[0].description)}: ${Math.round(day.main.temp)}&deg;F</p>
             </div>
         `
     });
