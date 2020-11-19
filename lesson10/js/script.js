@@ -55,4 +55,3 @@ var pancakeExists = document.querySelector("aside.pancakes") !== null;
 if (pancakeExists && new Date().getDay() != 5) {
   document.querySelector("aside.pancakes").style.display = 'none';
 }
-

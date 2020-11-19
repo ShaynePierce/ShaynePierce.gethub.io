@@ -65,6 +65,7 @@ async function renderWeather(cityName) {
     let htmlstring = '';
     let newDate = new Date();
     let dayDescrip = '';
+    let iconimg = '';
 
     newForecastDays.forEach(day => {
         newDate = new Date(day.dt_txt);
@@ -76,11 +77,42 @@ async function renderWeather(cityName) {
             dayDescrip = getWeekday(newDate.getDay());
         }
 
+        iconimg = '';
+        switch (day.weather[0].icon.substr(0, 2)) {
+            case '01': //sunny or clear
+                iconimg = 'sunny.png';
+                break;
+            case '02': //few clouds
+                iconimg = 'partly-cloudy.png';
+                break;
+            case '03': //scattered clouds
+                iconimg = 'cloudy.png';
+                break;
+            case '04': //broken clouds
+                iconimg = 'broken-clouds.png';
+                break;
+            case '09': //showers
+                iconimg = 'showers.png';
+                break;
+            case '10': //rain
+                iconimg = 'rain.png';
+                break;
+            case '11': //thunderstorm 
+                iconimg = 'thunderstorms.png';
+                break;
+            case '13': //snow
+                iconimg = 'snow.png';
+                break;
+            case '50': //mist or fog
+                iconimg = 'mists.png';
+                break;
+        }
+
         htmlstring += 
         `   <div class="forecast">
             <h4>${dayDescrip}</h4>          
             <p class="weather-date">${newDate.getMonth()+1}/${newDate.getDate()}</p>
-            <img src="https://openweathermap.org/img/w/${day.weather[0].icon}.png" alt="${day.weather[0].description}">
+            <img src="images/${iconimg}" alt="${day.weather[0].description}">
             <p class="weather-word">${day.weather[0].main}: ${Math.round(day.main.temp)}&deg;F</p>
             </div>
         `
