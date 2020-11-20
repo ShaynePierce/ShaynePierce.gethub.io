@@ -70,7 +70,7 @@
         position: absolute;
         bottom: 25px;
         right: 25px;
-        background: radial-gradient(#f1faeeff, var(--primary-background-color));
+        background: radial-gradient(#f1faeeff, #a8dadcff);
         border: 1px solid black;
         padding: 1rem;
         box-shadow: 0 0 30px #111;
