@@ -92,7 +92,9 @@
       </div>
       <article>
         <picture>
-          <img src="images/sodasprings-article480.jpg" srcset="images/sodasprings-article480.jpg 480w, images/sodasprings-article200.jpg 200w" alt="Soda Springs Article Photo" loading="lazy" >
+          <source media="(max-width: 200px)" srcset="images/sodasprings-article200.jpg">
+          <source media="(min-width: 201px)" srcset="images/sodasprings-article480.jpg">
+          <img src="images/sodasprings-article480.jpg" alt="Soda Springs Article Photo" loading="lazy" >
         </picture>
         <h3>No Room at the … Camping Ground?</h3>
         <p>Author: Shayne Pierce</p>

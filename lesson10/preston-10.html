@@ -92,7 +92,9 @@
       </div>
       <article>
         <picture>
-          <img src="images/preston-article480.jpg" srcset="images/preston-article480.jpg 480w, images/preston-article200.jpg 200w" alt="Preston Aricle Photo" loading="lazy" >
+          <source media="(max-width: 200px)" srcset="images/preston-article200.jpg">
+          <source media="(min-width: 201px)" srcset="images/preston-article480.jpg">
+          <img src="images/preston-article480.jpg" alt="Preston Aricle Photo" loading="lazy" >
         </picture>
         <h3>Break the COVID-19 Blues - Get out!</h3>
         <p>Author: Shayne Pierce</p>
