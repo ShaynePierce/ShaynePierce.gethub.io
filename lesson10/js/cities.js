@@ -13,6 +13,8 @@ async function rendercities() {
     let citiesJSON = await getJSON();
     let cities = citiesJSON['towns'];
 
+    console.log(cities);
+
     let html = '';
     html = addCity(cities, 'Preston') + addCity(cities, 'Soda Springs') + addCity(cities, 'Fish Haven');
 
@@ -47,4 +49,25 @@ function addCity(cities, cityName) {
     return htmlSegment;
 }
 
-rendercities();
+async function renderGetCityEvents(cityName) {
+    let eventHTML = '<h3>Local Events</h3><ul>';
+    let citiesJSON = await getJSON();
+    let cities = citiesJSON['towns'];
+    let cityData = cities.filter(city => city.name == cityName);
+    cityData[0].events.forEach(event => {
+        eventParts = event.split(':');
+        eventHTML += `<li>${eventParts[0]}:<span class="event-desc">${eventParts[1]}</span></li>`;
+    });
+    eventHTML += '</ul>';
+    document.querySelector("div.events").innerHTML = eventHTML;
+}
+
+
+let activeMenuCity = document.querySelector("a.active");
+if (activeMenuCity !== null) {
+    if (activeMenuCity.textContent == 'Home') {
+        rendercities();
+    } else {
+        renderGetCityEvents(activeMenuCity.textContent);
+    }
+}

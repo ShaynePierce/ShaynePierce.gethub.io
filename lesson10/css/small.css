@@ -87,6 +87,33 @@ main h2 {
     text-decoration: underline;
     padding-bottom: 5px ;
 }
+
+.weather-summary p > span, .events li > span {
+    font-weight: bold;
+}
+
+.events {   
+    color: var(--secondary-color);
+    background-color: var(--primary-background-color);
+    padding: 10px 0;
+}
+ 
+.events h3 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 5px ;
+}
+
+.main-forecast {    
+    background-color: rgb(219, 200, 219);
+    padding: 10px;
+    text-align: center;
+}
+
+.main-forecast h3 {    
+    margin-bottom: 10px; 
+}
+
 .forecast-container {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(75px,1fr));
@@ -178,6 +205,14 @@ footer {
 
 .contact-map {
     padding: 10px 0 0 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 5px;    
 }
 
 .map-responsive{

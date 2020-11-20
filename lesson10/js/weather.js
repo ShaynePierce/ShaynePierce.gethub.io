@@ -6,7 +6,7 @@ function getWindChill(temp, wind) {
     }
 }
 
-async function getJSON(requestURL) {
+async function getWeatherJSON(requestURL) {
     try {
         let res = await fetch(requestURL);
         return await res.json();
@@ -15,7 +15,7 @@ async function getJSON(requestURL) {
     }
 }
 
-function getWeekday(dayNum = 0) {
+function getWeekdayText(dayNum = 0) {
     if (dayNum == 0) {dayNum = new Date().getDay()};
     var dayNameList = [
         'Sunday',
@@ -54,27 +54,26 @@ async function renderWeather(cityName) {
     }
     let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${key}&units=imperial`;
 
-    let weatherData = await getJSON(weatherUrl);
+    let weatherData = await getWeatherJSON(weatherUrl);
 
-    document.querySelector('.current-condition').innerHTML = `<strong>${weatherData.weather[0].main}</strong>`;
-    document.querySelector('.current-temp').innerHTML = `<strong>${Math.round(weatherData.main.temp)}&deg;F</strong>`;
-    document.querySelector('.wind-speed').innerHTML = `<strong>${Math.round(weatherData.wind.speed)} mph</strong>`;
-    document.querySelector('.wind-chill').innerHTML = `<strong>${getWindChill(weatherData.main.temp, weatherData.wind.speed)}</strong>`;
-    document.querySelector('.humidity').innerHTML = `<strong>${Math.round(weatherData.main.humidity)}%</strong>`;
+    document.querySelector('.current-condition').innerHTML = `${weatherData.weather[0].main}`;
+    document.querySelector('.current-temp').innerHTML = `${Math.round(weatherData.main.temp)}&deg;F`;
+    document.querySelector('.wind-speed').innerHTML = `${Math.round(weatherData.wind.speed)} mph`;
+    document.querySelector('.wind-chill').innerHTML = `${getWindChill(weatherData.main.temp, weatherData.wind.speed)}`;
+    document.querySelector('.humidity').innerHTML = `${Math.round(weatherData.main.humidity)}%`;
 
 
     let forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${key}&units=imperial`;
 
-    let forecastData = await getJSON(forecastUrl);
+    let forecastData = await getWeatherJSON(forecastUrl);
     let forecastDays = forecastData.list;
     let newForecastDays = forecastDays.filter(day => day.dt_txt.includes('18:00:00'));
-
-    //console.log(newForecastDays);
 
     let htmlstring = '';
     let newDate = new Date();
     let dayDescrip = '';
     let iconimg = '';
+    let dayNum = 1;
 
     newForecastDays.forEach(day => {
         newDate = new Date(day.dt_txt);
@@ -83,7 +82,7 @@ async function renderWeather(cityName) {
         } else if (newDate.getDate() == new Date().getDate() + 1) {
             dayDescrip = 'Tomorrow';
         } else {
-            dayDescrip = getWeekday(newDate.getDay());
+            dayDescrip = getWeekdayText(newDate.getDay());
         }
 
         iconimg = '';
@@ -117,16 +116,18 @@ async function renderWeather(cityName) {
                 break;
         }
 
-        htmlstring += 
-        `   <div class="forecast">
-            <h4>${dayDescrip}</h4>          
-            <p class="weather-date">${newDate.getMonth()+1}/${newDate.getDate()}</p>
-            <img src="images/${iconimg}" alt="${day.weather[0].description}" title="${day.weather[0].main}">
-            <p class="weather-word">${toTitleCase(day.weather[0].description)}: ${Math.round(day.main.temp)}&deg;F</p>
-            </div>
-        `
+        document.querySelector(`.forecast-day${dayNum} h4`).innerHTML = dayDescrip;
+        document.querySelector(`.forecast-day${dayNum} .weather-date`).innerHTML = `${newDate.getMonth()+1}/${newDate.getDate()}`;
+        document.querySelector(`.forecast-day${dayNum} img`).setAttribute('src', `images/${iconimg}`);
+        document.querySelector(`.forecast-day${dayNum} img`).setAttribute('alt', day.weather[0].description);
+        document.querySelector(`.forecast-day${dayNum} img`).setAttribute('title', day.weather[0].main);
+        document.querySelector(`.forecast-day${dayNum} .weather-word`).innerHTML = `${toTitleCase(day.weather[0].description)}: ${Math.round(day.main.temp)}&deg;F`;
+        dayNum++;
     });
-    document.querySelector('.forecast-container').innerHTML = htmlstring;
+    document.querySelector('.main-forecast h3').innerHTML = '5-Day Forecast for ' + cityName;
 }
 
-renderWeather('Preston');
+let activeMenu = document.querySelector("a.active");
+if (activeMenu !== null) {
+    renderWeather(activeMenu.textContent);
+}

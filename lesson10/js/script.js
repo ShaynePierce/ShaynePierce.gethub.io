@@ -1,5 +1,5 @@
 function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("showmenu");
+    document.getElementsByClassName("navigation")[0].classList.toggle("showmenu");    
 }
 
 /*the following function closes the menu if resized - onresize event on the body element*/

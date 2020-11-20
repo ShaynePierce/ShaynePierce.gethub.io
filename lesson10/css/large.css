@@ -1,9 +1,5 @@
 @media only screen and (min-width: 50rem) {
 
-    img {
-        height: 100%;
-    }
-    
     .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
