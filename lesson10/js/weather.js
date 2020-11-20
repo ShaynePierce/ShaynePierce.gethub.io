@@ -119,7 +119,7 @@ async function renderWeather(cityName) {
         document.querySelector(`.forecast-day${dayNum} h4`).innerHTML = dayDescrip;
         document.querySelector(`.forecast-day${dayNum} .weather-date`).innerHTML = `${newDate.getMonth()+1}/${newDate.getDate()}`;
         document.querySelector(`.forecast-day${dayNum} img`).setAttribute('src', `images/${iconimg}`);
-        document.querySelector(`.forecast-day${dayNum} img`).setAttribute('alt', 'Image of ' + day.weather[0].description + '.');
+        document.querySelector(`.forecast-day${dayNum} img`).setAttribute('alt', `${iconimg} alternate image for ${day.weather[0].icon}png.`);
         document.querySelector(`.forecast-day${dayNum} img`).setAttribute('title', day.weather[0].main);
         document.querySelector(`.forecast-day${dayNum} .weather-word`).innerHTML = `${toTitleCase(day.weather[0].description)}: ${Math.round(day.main.temp)}&deg;F`;
         dayNum++;
