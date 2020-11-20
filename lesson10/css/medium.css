@@ -83,6 +83,11 @@
         overflow: hidden;
     }
     
+    article div, article h3, article p {
+        padding: 10px 0;
+        margin: 0;
+    }
+
     article picture {
         margin: 10px;
         width: 50%;

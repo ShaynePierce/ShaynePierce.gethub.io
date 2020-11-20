@@ -274,7 +274,7 @@ article {
 
 article div, article h3, article p {
     color: var(--primary-color);
-    padding: 0 0 10px 0;
+    padding: 10px;
     margin: 0;
 }
 
