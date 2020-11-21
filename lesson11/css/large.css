@@ -1,0 +1,35 @@
+@media only screen and (min-width: 50rem) {
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;    
+    }
+
+    figure:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .feature-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .featured-business ul {
+        display: block;
+        margin: auto;
+    }
+    
+
+    .cities {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .city {
+        display: block;
+    }
+    
+
+}

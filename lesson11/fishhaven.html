@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect 73&deg; - Fish Haven Idaho</title>
+    <meta name="description" content="Weather and Activities for Fish Haven Idaho.">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://api.openweathermap.org">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <aside class="pancakes">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</aside>
+    <header>
+      <picture>
+        <img class="logo" src="images/weathericon.png" alt="Perfect 73 logo">
+      </picture>
+      <section>
+        <h1>Perfect 73&deg;</h1>
+        <div class="tagline">Where the weather is always a perfect 73 degrees.</div>
+      </section>
+    </header>
+    <nav class="clearfix">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a class="active" href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2>Fish Haven Idaho</h2>
+      <div class="hero-container">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/fishhaven-hero-400.jpg">
+          <source media="(max-width: 600px)" srcset="images/fishhaven-hero-600.jpg">
+          <source media="(min-width: 601px)" srcset="images/fishhaven-hero-960.jpg">
+          <img src="images/fishhaven-hero-960.jpg" alt="Hero Image Fish Haven Idaho" loading="lazy">
+        </picture>
+        <div class="weather-summary">
+          <h3>Weather Summary</h3>
+          <p>Current: <span class="current-condition">Sunny</span></p>          
+          <p>Temperature: <span class="current-temp">73&deg;</span></p>    
+          <p>Wind: <span class="wind-speed">5 mph</span></p>          
+          <p>Wind Chill: <span class="wind-chill">none</span></p>      
+          <p>Humidity: <span class="humidity">none</span></p>      
+        </div>
+        <div class="events"></div>
+      </div>
+      <div class="main-forecast">
+        <H3>5-Day Forecast</H3>
+        <div class="forecast-container">
+          <div class="forecast forecast-day1">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day2">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day3">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day4">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day5">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+        </div>
+      </div>
+      <article>
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/fishhaven-article200.jpg">
+          <source media="(min-width: 201px)" srcset="images/fishhaven-article480.jpg">
+          <img src="images/fishhaven-article480.jpg" alt="Fish Haven Article Photo" loading="lazy" >
+        </picture>
+        <h3>River Clean-Up</h3>
+        <p>Author: Shayne Pierce</p>
+        <div class="article-text">Fish Haven City, Natural Resources Manager, Thomas Gardner has initiated a new program titled, “Clean River, Clean Conscience”. This program targets the pollution that occasionally builds up in the local Ninemile Creek as water levels rise in the Spring runoff. Gardner will host a conservation activity each month on the first Wednesday at the Bear Lake Valley boat ramp near the Skinner Cemetery. Volunteers will pick up trash and remove obstructions from the waterway so that water free flow can be achieved before summer busy season. Please wear rubber boots and gloves. For more information call the Natural Resource Management office at 208-555-6543.</div>
+      </article>
+    </main>
+    <footer>
+      <div class="contact-map">
+        <section class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Shayne Pierce</p>
+          <p>&#9993; shayne.pierce@gmail.com</p>
+          <p>&phone; 801-830-0472</p>
+          <p>&#9872; Pleasant Grove, UT</p>
+          <div class="social-media">
+            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/instagram.png" alt="Instagram icon"></a>
+            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/twitter.png" alt="Twitter icon"></a>              
+          </div>
+        </section>
+        <div class="map">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209833.35729743858!2d-111.41473021604553!3d42.034014764671376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1605845204751!5m2!1sen!2sus"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Perfect 73&deg; | <a href="../index.html">Shayne Pierce</a> | <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/cities.js"></script>
+  </body>
+</html>

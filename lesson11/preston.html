@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect 73&deg; - Preston Idaho</title>
+    <meta name="description" content="Weather and Activities for Preston Idaho.">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://api.openweathermap.org">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <aside class="pancakes">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</aside>
+    <header>
+      <picture>
+        <img class="logo" src="images/weathericon.png" alt="Perfect 73 logo">
+      </picture>
+      <section>
+        <h1>Perfect 73&deg;</h1>
+        <div class="tagline">Where the weather is always a perfect 73 degrees.</div>
+      </section>
+    </header>
+    <nav class="clearfix">
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="hero-container">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/preston-hero-400.jpg">
+          <source media="(max-width: 600px)" srcset="images/preston-hero-600.jpg">
+          <source media="(min-width: 601px)" srcset="images/preston-hero-960.jpg">
+          <img src="images/preston-hero-960.jpg" alt="Hero Image Preston Idaho" loading="lazy">
+        </picture>
+        <div class="weather-summary">
+          <h3>Weather Summary</h3>
+          <p>Current: <span class="current-condition">Sunny</span></p>          
+          <p>Temperature: <span class="current-temp">73&deg;</span></p>    
+          <p>Wind: <span class="wind-speed">5 mph</span></p>          
+          <p>Wind Chill: <span class="wind-chill">none</span></p>      
+          <p>Humidity: <span class="humidity">none</span></p>      
+        </div>
+        <div class="events"></div>
+      </div>
+      <div class="main-forecast">
+        <H3>5-Day Forecast</H3>
+        <div class="forecast-container">
+          <div class="forecast forecast-day1">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day2">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day3">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day4">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+          <div class="forecast forecast-day5">
+            <h4>Tomorrow</h4>          
+            <p class="weather-date">11/20</p>
+            <img src="images/partly-cloudy.png" alt="Partly Cloudy" title="Clouds">
+            <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+          </div>
+        </div>
+      </div>
+      <article>
+        <picture>
+          <source media="(max-width: 200px)" srcset="images/preston-article200.jpg">
+          <source media="(min-width: 201px)" srcset="images/preston-article480.jpg">
+          <img src="images/preston-article480.jpg" alt="Preston Aricle Photo" loading="lazy" >
+        </picture>
+        <h3>Break the COVID-19 Blues - Get out!</h3>
+        <p>Author: Shayne Pierce</p>
+        <div class="article-text">While news outlets are constantly blasting the seriousness of the recent global Corona Virus pandemic, including all its depressing statistics of contagions, exposure cases, contamination, and morbidity, the masses are feeling quite down and miserable. This is a perfect reason to get out of the house. Turn off social media and the news. Discover nature and bask in some sunlight. Get some fresh air. All these activities will boost your spirits, give you extra immune response, and keep your chances of contracting any virus very low. Being in sunlight helps your body build up critical vitamin D, which is a front-line to fighting any virus. Don't wallow in the depressing news of COVID. Get out and enjoy yourself and take your family and friends with you.</div>
+      </article>
+    </main>
+    <footer>
+      <div class="contact-map">
+        <section class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Shayne Pierce</p>
+          <p>&#9993; shayne.pierce@gmail.com</p>
+          <p>&phone; 801-830-0472</p>
+          <p>&#9872; Pleasant Grove, UT</p>
+          <div class="social-media">
+            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/instagram.png" alt="Instagram icon"></a>
+            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/twitter.png" alt="Twitter icon"></a>              
+          </div>
+        </section>
+        <div class="map">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477162.8598707267!2d-111.73498111887461!3d42.13350395839597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1605405945809!5m2!1sen!2sus"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Perfect 73&deg; | <a href="../index.html">Shayne Pierce</a> | <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/cities.js"></script>
+  </body>
+</html>
