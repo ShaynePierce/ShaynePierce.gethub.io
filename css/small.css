@@ -81,3 +81,32 @@ body {
   line-height: 1.1em;
   font-weight: bold;
 }
+
+.error-404 {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.error-404 h1 {
+  font-size: 2rem;  
+}
+
+
+.error-404 picture {
+  width: 50%;    
+  margin: 20px auto;
+  display: block;
+  border: 1px solid gray;
+  box-shadow: 0 0 30px #111;  
+}
+
+.error-404 picture img {
+  width: 100%;
+  display: block;
+}
+
+.error-404 a {
+  font-size: 1.5rem;
+  padding: 10px;
+}
