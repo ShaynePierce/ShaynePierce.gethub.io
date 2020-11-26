@@ -13,8 +13,6 @@ async function rendercities() {
     let citiesJSON = await getJSON();
     let cities = citiesJSON['towns'];
 
-    console.log(cities);
-
     let html = '';
     html = addCity(cities, 'Preston') + addCity(cities, 'Soda Springs') + addCity(cities, 'Fish Haven');
 
