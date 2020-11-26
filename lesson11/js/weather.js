@@ -46,10 +46,10 @@ async function renderWeather(cityName) {
             cityId = '5604473';
             break;
         case 'Soda Springs':
-            cityId = '5604473';
+            cityId = '5607916'; 
             break;
         case 'Fish Haven':
-            cityId = '5604473';
+            cityId = '5585010'; 
             break;
     }
     let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${key}&units=imperial`;
