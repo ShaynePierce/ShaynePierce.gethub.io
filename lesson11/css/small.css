@@ -103,8 +103,11 @@ main h2 {
 }
 
 .main-forecast {    
-    background-color: rgb(219, 200, 219);
+    box-sizing: border-box;
     padding: 10px;
+    border: 1px solid gray;
+    margin: 10px auto;
+    background-color: rgb(219, 200, 219);
     text-align: center;
 }
 
@@ -183,9 +186,9 @@ nav {
 }
 
 footer {
+    box-sizing: border-box;
     max-width: 60rem;
     margin: auto;
-    background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     padding: 0;
     line-height: 1.1em;
@@ -197,12 +200,12 @@ footer {
     padding: 0;
 }
 
-/* .map h4 {
-    display: none;
-} */
-
 .contact-map {
+    background-color: var(--secondary-background-color);
+    box-sizing: border-box;
     padding: 10px 0 0 0;
+    border: 1px solid gray;
+    margin: 10px auto;
 }
 
 .social-media {
@@ -259,16 +262,11 @@ footer {
     font-weight: bold;    
 }
 
-/* .contentbox {
-    box-sizing: border-box;
-    padding: 1rem;
-    width: 100%;
-    height: auto;
-    border: 1px dashed gray;
-    background-color: lightgray;
-} */
-
 article {
+    box-sizing: border-box;
+    padding: 10px 0 0 0;
+    border: 1px solid gray;
+    margin: 10px auto;
     background-color: var(--primary-background-color);
 }
 
@@ -301,15 +299,13 @@ figure {
     padding: 0.5em;
     position: relative;
     box-sizing: border-box;
-    /*box-shadow: 5px 5px 10px;
-    border-radius: 5px;*/
 }
 
 figure img {
     width: 100%;
     display: block;
     filter: blur(0em);
-    transition: filter 3s;
+    transition: filter 0.5s;
 }
 
 figcaption {
@@ -322,6 +318,11 @@ figure img[data-src] {
 }
 
 /*----------- FORM --------------*/
+form {
+    max-width: 20.5rem;
+    margin: 0 auto;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #445ba9;
@@ -382,22 +383,6 @@ form label.severity input {
     padding: 0;
     width: 100%;
 }
-
-/* form label.label-storm-region select {
-    display: block;
-    font-size: 1rem;
-    padding: 0.75rem 0;
-    width: 100%;
-    max-width: 21.5rem;
-    border: 1px solid #999;
-    border-radius: 4px;
-    background-color: rgba(0,0,0,0.1);
-} */
-
-/* .down-arrow {
-    text-align: right;
-    font-size: 2rem;    
-} */
 
 form label.sbs {
     display: block;
