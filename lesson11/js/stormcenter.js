@@ -1,8 +1,15 @@
 function adjustRating(rating) {
-    document.querySelector(".storm-severity-value").innerHTML = rating;
-    switch (true) {
-        case (rating < 4):
-            document.querySelector("input.storm-severity").innerHTML = rating;
+    let ratingDisplay = document.querySelector(".storm-severity-value");
+    ratingDisplay.innerHTML = rating;
 
+    switch (true) {
+        case (rating < 3):
+            ratingDisplay.style.color = "blue";
+            break;
+        case (rating > 5):
+            ratingDisplay.style.color = "red";
+            break;
+        default:            
+            ratingDisplay.style.color = "tomato";
     } 
 }

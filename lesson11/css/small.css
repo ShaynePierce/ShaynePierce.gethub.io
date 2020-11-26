@@ -236,8 +236,14 @@ footer {
     border: none; 
 }
 
+.contact-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
 .contact-info {
-    padding: 0 0 10px 0;
+    margin: 10px;
+    padding: 0 0 10px 0;    
 }
 
 .contact-info p {
@@ -250,11 +256,11 @@ footer {
 }
 
 .footer-bar a:link {
-    color: var(--secondary-color);
+    color: mediumblue;
 }
 
 .footer-bar a:visited {
-    color: var(--secondary-color);
+    color: mediumblue;
 }
 
 .footer-bar a:hover {
@@ -319,7 +325,7 @@ figure img[data-src] {
 
 /*----------- FORM --------------*/
 form {
-    max-width: 20.5rem;
+    max-width: 30rem;
     margin: 0 auto;
 }
 
@@ -334,6 +340,7 @@ form legend {
     color: #445ba9;
     margin: 0 1rem;
     padding: 0 .5rem;
+    align-content: center;
 }
 
 form label.top, form div {
@@ -352,7 +359,7 @@ form label.top input, form label.top select, form label.top textarea {
     padding: 0.75rem;
     color: #555;
     width: 100%;
-    max-width: 20rem;
+    max-width: 25rem;
     background-color: rgba(0,0,0,0.1);
     box-sizing: border-box;
 }
@@ -362,7 +369,8 @@ form label.severity {
     padding-top: 1rem;
     color: #9c2c13;
     font-size: 1rem;
-    max-width: 20rem;
+    max-width: 25rem;    
+    align-items: center;
 }
 
 .storm-severity-label-text {
@@ -371,7 +379,7 @@ form label.severity {
 }
 
 .storm-severity-value {
-    color: #445ba9;
+    color: tomato;
     font-weight: bold;
     width: 50%;
     text-align: right;
@@ -379,6 +387,7 @@ form label.severity {
 
 
 form label.severity input {    
+    box-sizing: border-box;
     display: block;
     padding: 0;
     width: 100%;
@@ -402,7 +411,7 @@ form input.submitBtn {
     padding: 0.75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
-    max-width: 20rem;
+    max-width: 25rem;
 }
 
 form label.top input:required {
