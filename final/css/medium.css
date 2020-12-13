@@ -102,6 +102,15 @@
         padding: 0.4rem 0;
     }
 
+    .confirmation {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .confirmation table {
+        width: 80%;
+    }
+
     .tour picture {
         float: right;
     }

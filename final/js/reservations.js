@@ -6,31 +6,39 @@ function makeConfirm() {
     <h3>Your Reservation Request:</h3>
     <table>
         <tr>
-            <td>Your Full Name:</td>
+            <th>Your Full Name:</th>
             <td>${params.get('fname')}</td>
         </tr>
         <tr>
-            <td>Email:</td>
+            <th>Email:</th>
             <td>${params.get('email')}</td>
         </tr>
         <tr>
-            <td>Phone:</td>
+            <th>Phone:</th>
             <td>${params.get('phone')}</td>
         </tr>
         <tr>
-            <td>Reservation Date:</td>
+            <th>Home State/Country:</th>
+            <td>${params.get('state')}</td>
+        </tr>
+        <tr>
+            <th>Cruise Line:</th>
+            <td>${params.get('cruise')}</td>
+        </tr>
+        <tr>
+            <th>Reservation Date:</th>
             <td>${params.get('reservation-date')}</td>
         </tr>
         <tr>
-            <td>Vehicle type:</td>
+            <th>Vehicle type:</th>
             <td>${params.get('vehicle-type')}</td>
         </tr>
         <tr>
-            <td>Duration:</td>
+            <th>Duration:</th>
             <td>${params.get('duration')}</td>
         </tr>
         <tr>
-            <td>Additional Info:</td>
+            <th>Additional Info:</th>
             <td>${params.get('additional-info')}</td>
         </tr>
     </table>

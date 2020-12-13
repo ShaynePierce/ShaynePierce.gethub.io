@@ -399,6 +399,19 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
+.confirmation h3 {
+    margin-bottom: 30px;
+}
+
+.confirmation p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.confirmation table {
+    margin: 0 auto;
+}
+
 .tour {
     box-sizing: border-box;
     background-color: rgb(219, 200, 219);
