@@ -323,8 +323,14 @@ footer {
     font-weight: bold;    
 }
 
+.reservations-main {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 form {
-    max-width: 30rem;
+    width: 80%;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
@@ -434,13 +440,14 @@ form label.top input:required:valid {
 .important-rental-info {
     box-sizing: border-box;
     background-color: rgb(219, 200, 219);
-    padding: 10px 10px 0 10px;    
+    padding: 10px 10px 10px 10px;    
     margin-bottom: 10px;
     border: 1px solid gray;
-    overflow:auto;
+    overflow: visible;
 }
 
 .important-rental-info ul {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

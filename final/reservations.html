@@ -39,29 +39,46 @@
     </nav>
     </header>
     <main>
-      <form method="get" action="confirmation.html">
-        <fieldset>
-          <legend>Contact Information</legend>
-          <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
-          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-          <label class="top">Phone* <input type="tel" name="phone" placeholder="5554441234" required></label>
-        </fieldset>
-        <fieldset>
-          <legend>Vehicle Reservation</legend>
-          <label class="top">Date of Reservation <input type="date" name="reservation-date" required></label>
-          <label class="top">Vehicle Type <input list="vehicle-types" name="vehicle-type" required/>
-              <datalist id="vehicle-types">
-                <option value="Option 1">
-                <option value="Option 2">
-            </datalist>
-          </label>
-          <div>Full Day or Half Day?*</div>
-          <label class="sbs"><input type="radio" name="duration" value="full" required> Full-Day</label>
-          <label class="sbs"><input type="radio" name="duration" value="Half" required> Half-Day</label>
-          <label class="top">Special Requests <textarea class="add-info" name="additional-info"></textarea></label>
-        </fieldset>  
-        <input type="submit" value="Reserve My Vehicle" class="submitBtn">
-      </form>
+      <div class="reservations-main">
+        <form method="get" action="confirmation.html">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="5554441234" required></label>
+          </fieldset>
+          <fieldset>
+            <legend>Vehicle Reservation</legend>
+            <label class="top">Date of Reservation <input type="date" name="reservation-date" required></label>
+            <label class="top">Vehicle Type <input list="vehicle-types" name="vehicle-type" required/>
+                <datalist id="vehicle-types">
+                  <option value="Option 1">
+                  <option value="Option 2">
+              </datalist>
+            </label>
+            <div>Full Day or Half Day?*</div>
+            <label class="sbs"><input type="radio" name="duration" value="full" required> Full-Day</label>
+            <label class="sbs"><input type="radio" name="duration" value="Half" required> Half-Day</label>
+            <label class="top">Special Requests <textarea class="add-info" name="additional-info"></textarea></label>
+          </fieldset>  
+          <input type="submit" value="Reserve My Vehicle" class="submitBtn">
+        </form>
+        <div class="important-rental-info">
+          <h2>Important Rental Information</h2>
+          <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at time of rental.</li>
+            <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate requires 24 hour prior notification.</li>
+            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+            <li>Rentals may be returned to either location.</li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer-bar">
