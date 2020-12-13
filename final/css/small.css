@@ -159,8 +159,8 @@ tbody tr th {
 .weather-alert {
     font-family: 'Patua One', cursive;
     font-weight: bold;
-    color: red;
-    background-color: lightyellow;
+    color: yellow;
+    background-color: red;
 }
 
 .forecast-container {
