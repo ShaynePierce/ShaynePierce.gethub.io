@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="description" content="Scooters, ATVs, and Jeep rentals on teh island of Cozumel">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <header>
+      <div class="top-header">
+        <picture>
+          <a href="index.html"><img class="logo" src="images/motor-scooter.png" alt="Scoots"></a>
+        </picture>
+        <section>
+          <h1>Scoots Rentals</h1>
+          <h2 class="tagline">Your #1 Scooter Rental on Cozumel Island!</div>
+        </section>
+      </div>
+      <nav>
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-container">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/scootsrentals400.jpg">
+          <source media="(max-width: 700px)" srcset="images/scootsrentals700.jpg">
+          <source media="(min-width: 701px)" srcset="images/scootsrentals1200.jpg">
+          <img src="images/scootsrentals1200.jpg" alt="Hero Image Scoots Rentals" loading="lazy">
+        </picture>
+        <div class="why-rent">
+          <h3>Why rent from us?</h3>
+          <p>&starf;All new equipment</p>
+          <p>&starf;Best prices (includes helmets)</p>
+          <p>&starf;Free road-side service</p>
+        </div>
+        <div class="main-forecast">
+          <h3>Current Condition in Cozumel</h3>
+          <div class="current-condition"></div>
+          <div class="weather-alert"></div>
+          <h3>3-Day Forecast</h3>
+          <div class="forecast-container">
+            <div class="forecast forecast-day1">
+              <h4>Tomorrow</h4>          
+              <p class="weather-date">11/20</p>
+              <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+              <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+            </div>
+            <div class="forecast forecast-day2">
+              <h4>Tomorrow</h4>          
+              <p class="weather-date">11/20</p>
+              <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+              <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+            </div>
+            <div class="forecast forecast-day3">
+              <h4>Tomorrow</h4>          
+              <p class="weather-date">11/20</p>
+              <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+              <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="rental-info">
+        <div class="rental-terms">
+          <h2>Let's get you on the road!</h2>
+          <ul>
+            <li>Check out takes less than 5 minutes</li>
+            <li>Both single and double-seaters available</li>
+            <li>Shuttle to the dockyard after rental</li>
+            <li>Environmentally friendly - low emmisions</li>
+            <li>Safety training provided</li>
+            <li>Save more with a <a href="reservations.html">reservation</a></li>
+          </ul>
+        </div>
+        <div class="rental-items"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Scoots Rentals | <a href="../index.html">Shayne Pierce</a> | <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/rental-data.js"></script>
+  </body>
+</html>

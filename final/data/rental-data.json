@@ -1,0 +1,70 @@
+{
+    "scooters": [
+        {
+            "name": "Honda Metro Scooter", 
+            "riders": 1, 
+            "resHalfDay": 20, 
+            "resFullDay": 30, 
+            "walkInHalfDay": 25, 
+            "walkInFullDay": 35,
+            "image": "HondaMetroScooter.jpg",
+            "imageDesc": "The Honda Metro can be a fun way to get around",
+            "features":[ "250 pound weight limit", "Pull start", "Headlight", "Max speed: 45 mph", "85 miles on a full tank" ]
+        },
+        {
+            "name": "Honda Dio Scooter", 
+            "riders": 2, 
+            "resHalfDay": 30, 
+            "resFullDay": 40, 
+            "walkInHalfDay": 35, 
+            "walkInFullDay": 45,
+            "image": "HondaDioScooter.jpg",
+            "imageDesc": "The Honda Dio can seat 2 riders",
+            "features":[ "350 pound weight limit", "Electric starter", "Radio", "Foot-bar for second rider", "Helmet keeper" ]
+        },
+        {
+            "name": "Honda PCX150 Scooter", 
+            "riders": 2, 
+            "resHalfDay": 40, 
+            "resFullDay": 50, 
+            "walkInHalfDay": 45, 
+            "walkInFullDay": 55,
+            "image": "HondaPCX150Scooter.jpg",
+            "imageDesc": "The Honda PCX150 is a pwerful fun machine", 
+            "features":[ "Fast, loud, and fun", "Extra handle for second rider", "Can be locked", "Boogie-board rack available", "USB Charger" ]
+        },
+        {
+            "name": "Honda Pioneer ATV", 
+            "riders": 4, 
+            "resHalfDay": 50, 
+            "resFullDay": 70, 
+            "walkInHalfDay": 60, 
+            "walkInFullDay": 80,
+            "image": "HondaPioneerATV.jpg",
+            "imageDesc": "The Honda Pioneer ATV will let you get off the road",
+            "features":[ "Off-road ready", "Seat-belts", "Roll-bar", "Radio", "USB Charger" ]
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with AC", 
+            "riders": 5, 
+            "resHalfDay": 70, 
+            "resFullDay": 100, 
+            "walkInHalfDay": 85, 
+            "walkInFullDay": 125,
+            "image": "JeepWrangler4Door.jpg",
+            "imageDesc": "The Jeep Wrangler is the perfect get-away vehicle!",
+            "features":[ "Air conditioning!", "Bluetooth Capable Radio", "Sunroof", "Hatch-back for gear", "Leather Seats" ]
+        },
+        {
+            "name": "Jeep Wrangler - 2 door", 
+            "riders": 4, 
+            "resHalfDay": 60, 
+            "resFullDay": 85, 
+            "walkInHalfDay": 70, 
+            "walkInFullDay": 90,
+            "image": "JeepWrangler2Door.jpg",
+            "imageDesc": "cruisin with a jeep wrangler",
+            "features":[ "Off-road ready", "Seat-belts", "Sunroof", "Towing-capable", "USB Charger" ]
+        }
+    ]
+}

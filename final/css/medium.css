@@ -1,0 +1,120 @@
+@media only screen and (min-width: 600px) {
+    header {
+        margin-bottom: 10px;
+    }    
+
+    .navigation { 
+        display: flex; 
+    }
+
+    .navigation li { 
+        display: block;
+        flex: 1 1 100%; 
+        overflow: hidden;
+        border: none;
+    }
+
+    .navigation li:not(:last-child) { 
+        border-right: 1px solid rgba(0,0,0,0.3);    
+    }
+
+
+    .navigation li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;        
+    }
+
+    .navigation li:first-child { 
+        display: none;
+    }
+
+    .navigation li a { 
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.8rem 1rem;
+        margin: 0 auto;
+    }
+
+    .rental-info {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 10px;
+        margin: 10px auto 10px;
+    }
+    
+    header picture img {
+        height: 8rem;
+    }
+
+    .hero-container {
+        position: relative;
+        margin: 10px auto 5px;
+    }
+
+    .why-rent {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: radial-gradient(white, #caf8eacc);
+        border: 1px solid black;
+        padding: 10px;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+    }
+
+    .main-forecast {
+        max-width: 40%;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: #A882DD;
+        border: 1px solid black;
+        padding: 10px;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+    }
+
+
+    .contact-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .map {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .map-responsive {
+        border: 1px solid grey;
+        height: 100%;
+    }    
+
+    form label.sbs {
+        padding: 0.4rem 0;
+    }
+
+    .tour picture {
+        float: right;
+    }
+
+    .tour picture {
+        float: right;
+        width: 50%;
+        max-width: 500px;
+        position: relative;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        }
+    
+
+
+}

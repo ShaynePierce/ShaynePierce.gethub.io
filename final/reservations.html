@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="description" content="Scooters, ATVs, and Jeep rentals on teh island of Cozumel">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <header>
+      <div class="top-header">
+        <picture>
+          <a href="index.html"><img class="logo" src="images/motor-scooter.png" alt="Scoots"></a>
+        </picture>
+        <section>
+          <h1>Scoots Rentals</h1>
+          <h2 class="tagline">Your #1 Scooter Rental on Cozumel Island!</div>
+        </section>
+      </div>
+      <nav>
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a  class="active" href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+      <form method="get" action="confirmation.html">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+          <label class="top">Phone* <input type="tel" name="phone" placeholder="5554441234" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Vehicle Reservation</legend>
+          <label class="top">Date of Reservation <input type="date" name="reservation-date" required></label>
+          <label class="top">Vehicle Type <input list="vehicle-types" name="vehicle-type" required/>
+              <datalist id="vehicle-types">
+                <option value="Option 1">
+                <option value="Option 2">
+            </datalist>
+          </label>
+          <div>Full Day or Half Day?*</div>
+          <label class="sbs"><input type="radio" name="duration" value="full" required> Full-Day</label>
+          <label class="sbs"><input type="radio" name="duration" value="Half" required> Half-Day</label>
+          <label class="top">Special Requests <textarea class="add-info" name="additional-info"></textarea></label>
+        </fieldset>  
+        <input type="submit" value="Reserve My Vehicle" class="submitBtn">
+      </form>
+    </main>
+    <footer>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Scoots Rentals | <a href="../index.html">Shayne Pierce</a> | <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/rentals-form.js"></script>
+  </body>
+</html>

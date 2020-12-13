@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="description" content="Scooters, ATVs, and Jeep rentals on teh island of Cozumel">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon2.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+  </head>
+  <body onresize=toggleMenuClosedOnWindowReSize()>
+    <header>
+      <div class="top-header">
+        <picture>
+          <a href="index.html"><img class="logo" src="images/motor-scooter.png" alt="Scoots"></a>
+        </picture>
+        <section>
+          <h1>Scoots Rentals</h1>
+          <h2 class="tagline">Your #1 Scooter Rental on Cozumel Island!</div>
+        </section>
+      </div>
+      <nav>
+        <ul class="navigation hidemenu">
+            <li><a class="hamburger" onclick="toggleMenu()" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero-container">
+        <picture>
+          <source media="(max-width: 400px)" srcset="images/scootsrentals400.jpg">
+          <source media="(max-width: 700px)" srcset="images/scootsrentals700.jpg">
+          <source media="(min-width: 701px)" srcset="images/scootsrentals1200.jpg">
+          <img src="images/scootsrentals1200.jpg" alt="Hero Image Scoots Rentals" loading="lazy">
+        </picture>
+        <div class="why-rent">
+          <h3>Why rent from us?</h3>
+          <p>&starf;All new equipment</p>
+          <p>&starf;Best prices (includes helmets)</p>
+          <p>&starf;Free road-side service</p>
+        </div>
+        <div class="main-forecast">
+          <H3>3-Day Forecast</H3>
+          <div class="forecast-container">
+            <div class="forecast forecast-day1">
+              <h4>Tomorrow</h4>          
+              <p class="weather-date">11/20</p>
+              <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+              <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+            </div>
+            <div class="forecast forecast-day2">
+              <h4>Tomorrow</h4>          
+              <p class="weather-date">11/20</p>
+              <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+              <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+            </div>
+            <div class="forecast forecast-day3">
+              <h4>Tomorrow</h4>          
+              <p class="weather-date">11/20</p>
+              <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+              <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="rental-info">
+        <div class="rental-terms">
+          <h2>Let's get you on the road!</h2>
+          <ul>
+            <li>Check out takes less than 5 minutes</li>
+            <li>Both single and double-seaters available</li>
+            <li>Shuttle to the dockyard after rental</li>
+            <li>Environmentally friendly - low emmisions</li>
+            <li>Safety training provided</li>
+            <li>Save more with a <a href="reservations.html">reservation</a></li>
+          </ul>
+        </div>
+        <div class="rental-items"></div>
+      </section>
+      <section class="tour">
+        <picture>
+          <source media="(max-width: 250px)" srcset="images/SanGervasio250.jpg">
+          <source media="(min-width: 251px)" srcset="images/SanGervasio.jpg">
+          <img src="images/SanGervasio.jpg" alt="ancient archeology ruins site at San Gervasio" loading="lazy">
+        </picture>
+        <h2>San Gervasio</h2>
+        <p>San Gervasio is an archaeological site of the pre-Columbian Maya civilization, located in the northern third of the island of Cozumel off the northeastern coast of the Yucatán Peninsula, in what is now the Mexican state of Quintana Roo. San Gervasio's pre-Hispanic name was Tantun Cuzamil, Mayan for Flat Rock in the place of the Swallows. The ruins were once a hub of worship of the goddess Ix Chel, an aged deity of childbirth, fertility, medicine, and weaving. Pre-Columbian Maya women would try to travel to San Gervasio and make offerings at least once in their lives. In 1560, the Spanish historian, Diego Lopez de Cogolludo, wrote: "The pilgrims arrive at Cozumel for the fulfillment of their vows to offer their sacrifices, to ask help for their needs, and for the mistaken adoration of their false gods."  <a href="https://en.wikipedia.org/wiki/San_Gervasio_(Maya_site)">Wikipedia</a></p>
+        <h3>Drive Time: <strong>25 minutes</strong></h3>
+      </section>  
+      <section class="tour">
+        <picture>
+          <source media="(max-width: 250px)" srcset="images/PuntaSurBeach250.jpg">
+          <source media="(min-width: 251px)" srcset="images/PuntaSurBeach.jpg">
+          <img src="images/PuntaSurBeach.jpg" alt="relaxing sands of Punta Sur Beach" loading="lazy">
+        </picture>
+        <h2>Punta Sur Beach</h2>
+        <p>Punta Sur marks the southern point of Cozumel and is part of the Parque Punta Sur, a 247-acre ecological park that covers the reefs, beaches, lagoons, and low forest of the surrounding area. The reef system is also part of the Arrecifes de Cozumel National Park. The Celarain lighthouse sits on the Punta Sur promontory and is part of a nautical museum. Just northeast of it is the Caracol, a Maya building erected during the post-classic period. Some of the sandy beaches are protected to allow hatching for sea turtles. Observation towers have been erected at the Columbia lagoon to watch wildlife. Off Punta Sur is the Devil's Throat scuba diving area, while in the closer reef visitors can snorkel.  <a href="https://en.wikipedia.org/wiki/Punta_Sur">Wikipedia</a></p>
+        <h3>Drive Time: <strong>40 minutes</strong></h3>
+      </section>
+      <section class="tour">
+        <picture>
+          <source media="(max-width: 250px)" srcset="images/IslaDePasion250.jpg">
+          <source media="(min-width: 251px)" srcset="images/IslaDePasion.jpg">
+          <img src="images/IslaDePasion.jpg" alt="Beautiful beach at Isla de Passion" loading="lazy">
+        </picture>
+        <h2>Isla de Pasion</h2>
+        <p>Isla de Pasion is a small island at the North end of Cozumel, Quintana Roo, Mexico. There is a tour available for visitors.  <a href="https://en.wikipedia.org/wiki/Isla_de_Pasion">Wikipedia</a> Escape to a gorgeous secluded island. A beach paradise, known as Passion Island, the perfect place to relax and enjoy the Caribbean at its best! Just 15 minutes away from downtown, once in paradise you are invited to submerge yourself in a world of palm trees, hammocks, lounge beds, picnic tables and beach games. All age activities. Buffet lunch and open bar complementary.  <a href="https://www.tripadvisor.ca/Attraction_Review-g150809-d154082-Reviews-Isla_Pasion-Cozumel_Yucatan_Peninsula.html">Trip Advisor</a></p>
+        <h3>Drive Time: <strong>15 minutes</strong></h3>
+      </section>
+      <div class="rentals"></div>
+      <form method="get" action="confirmation.html">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label class="top">Full Name* <input type="text" name="fname" required autofocus pattern="[A-Za-z]{5,}"></label>
+          <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+          <label class="top">Phone* <input type="tel" name="phone" placeholder="5554441234" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Vehicle Reservation</legend>
+          <label class="top">Date of Reservation <input type="date" name="reservation-date" required></label>
+          <label class="top">Vehicle Type <input list="vehicle-types" name="vehicle-type" required/>
+              <datalist id="vehicle-types">
+                <option value="Option 1">
+                <option value="Option 2">
+            </datalist>
+          </label>
+          <div>Full Day or Half Day?*</div>
+          <label class="sbs"><input type="radio" name="duration" value="full" required> Full-Day</label>
+          <label class="sbs"><input type="radio" name="duration" value="Half" required> Half-Day</label>
+          <label class="top">Special Requests <textarea class="add-info" name="additional-info"></textarea></label>
+        </fieldset>  
+        <input type="submit" value="Reserve My Vehicle" class="submitBtn">
+      </form>
+    </main>
+    <footer>
+      <div class="contact-map">
+        <section class="contact-info">
+          <h4>Contact Information</h4>
+          <p>Scooter Rentals Management</p>
+          <p>345 Cortez Lane</p>
+          <p class="phone">Cozumel, MX 1234-6547</p>
+          <p class="email"><a href="mailto:questionsd@scootsrentals.com" rel="noopener noreferrer"><img class="social-icons" src="images/gmail.png" alt="Gmail icon"> questionsd@scootsrentals.com</a></p>
+          <p><img class="social-icons" src="images/phone.png" alt="Phone icon"> +52 1234-5678</p>          
+          <div class="social-media">
+            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/facebook.png" alt="Facebook icon"></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/instagram.png" alt="Instagram icon"></a>
+            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/twitter.png" alt="Twitter icon"></a>              
+            <a href="http://www.youtube.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/youtube.png" alt="Youtube icon"></a>              
+            <a href="http://www.whatsapp.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="images/whatsapp.png" alt="WhatsApp icon"></a>                                        
+          </div>
+        </section>
+        <div class="map">
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119579.36920706397!2d-86.99167133675266!3d20.512157737254547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5846a9c56ac7%3A0x8ab8d136e4473589!2sCozumel%20International%20Airport!5e0!3m2!1sen!2sus!4v1607568149168!5m2!1sen!2sus"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>&copy;<span class="copyright-year"></span> Scoots Rentals | <a href="../index.html">Shayne Pierce</a> | <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
+        <p><span class="current-date"></span></p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/rental-data.js"></script>
+    <script src="js/rentals.js"></script>
+    <script src="js/rentals-form.js"></script>
+  </body>
+</html>
