@@ -14,6 +14,7 @@ async function makeRentalTable() {
     let scooters = rentalJSON['scooters'];
 
     let html = '';
+    let vehicleNum = 0;
     scooters.forEach(vehicle => {        
         featuresHtml = '<ul>';
         vehicle.features.forEach(feature => {
@@ -35,11 +36,11 @@ async function makeRentalTable() {
                     <tr>
                         <th rowspan="2">Reservation</th>
                         <th>Half-Day</th>
-                        <td>$${vehicle.resHalfDay}</td>
+                        <td><a href="reservations.html?vehicle=${vehicleNum}&fullDay=No">$${vehicle.resHalfDay}</a></td>
                     </tr>
                     <tr>
                         <th>Full-Day</th>
-                        <td>$${vehicle.resFullDay}</td>
+                        <td><a href="reservations.html?vehicle=${vehicleNum}&fullDay=Yes">$${vehicle.resFullDay}</a></td>
                     </tr>
                     <tr>
                         <th rowspan="2">Walk-In</th>
@@ -52,6 +53,7 @@ async function makeRentalTable() {
                     </tr>
                 </table>    
             </div>`;
+        vehicleNum++;
     });
     html += `
         </tbody>

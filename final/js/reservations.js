@@ -1,9 +1,34 @@
-var params = new URLSearchParams(location.search);
+const costRequestURL = 'data/rental-data.json';
 
-function makeConfirm() {
+async function getJSON() {
+    try {
+        let res = await fetch(costRequestURL);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function makeConfirmation() {
+    let rentalJSON = await getJSON();
+    let scooters = rentalJSON['scooters'];
+    
+    var params = new URLSearchParams(location.search);
+
+    let totalCost = 0;
+
+    for (i = 0; i < scooters.length; i++) {
+        if (scooters[i].name == params.get('vehicle-type')) {
+            if (params.get('duration') == 'full') {
+                totalCost = scooters[i].resFullDay;
+            } else {
+                totalCost = scooters[i].resHalfDay;
+            }
+        }
+    }
     var data = `
     <h2>Success!</h2>
-    <h3>Your Reservation Request:</h3>
+    <h3>Your Reservation Request number is ${(Math.round(Math.random() * 1000000))}:</h3>
     <table>
         <tr>
             <th>Your Full Name:</th>
@@ -42,11 +67,13 @@ function makeConfirm() {
             <td>${params.get('additional-info')}</td>
         </tr>
     </table>
-    <p>For any concerns, please email reservations@scooterrentals.com</p> 
+
+    <p>The total cost of your reservation will be <strong>$${(totalCost * 1.05).toFixed(2)}</strong> which includes 5% local tourism tax. Please have cash or a credit card ready at time of rental.</p> 
+    <p>For any questions or concerns, please email reservations@scooterrentals.com</p> 
 
     `;
 
     document.querySelector(".confirmation").innerHTML = data;
 }
 
-makeConfirm();
+makeConfirmation();

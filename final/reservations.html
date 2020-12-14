@@ -51,16 +51,17 @@
           </fieldset>
           <fieldset>
             <legend>Vehicle Reservation</legend>
-            <label class="top">Date of Reservation <input type="date" name="reservation-date" required></label>
-            <label class="top">Vehicle Type <input list="vehicle-types" name="vehicle-type" required/>
-                <datalist id="vehicle-types">
-                  <option value="Option 1">
-                  <option value="Option 2">
-              </datalist>
+            <label class="top">Date of Reservation <input type="date" name="reservation-date" required></label>            
+            <label class="top">Vehicle Type 
+              <select name="vehicle-type" id="vehicle-type-selector" required>
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3">option3</option>
+              </select>  
             </label>
             <div>Full Day or Half Day?*</div>
-            <label class="sbs"><input type="radio" name="duration" value="full" required> Full-Day</label>
-            <label class="sbs"><input type="radio" name="duration" value="Half" required> Half-Day</label>
+            <label class="sbs"><input type="radio" name="duration" value="full" id="duration-full" required> Full-Day</label>
+            <label class="sbs"><input type="radio" name="duration" value="half" id="duration-half" required> Half-Day</label>
             <label class="top">Special Requests <textarea class="add-info" name="additional-info"></textarea></label>
           </fieldset>  
           <input type="submit" value="Reserve My Vehicle" class="submitBtn">
