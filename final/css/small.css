@@ -246,6 +246,18 @@ footer {
     text-align: center;
 }
 
+.footer-social-icons {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-right: 5px;    
+}
+
 .footer-bar p {
     margin: 0;
     padding: 0;
