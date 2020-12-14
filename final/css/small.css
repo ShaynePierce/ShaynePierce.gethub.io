@@ -411,6 +411,10 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
+.confirmation {
+    padding: 10px;
+}
+
 .confirmation h3 {
     margin-bottom: 30px;
 }
