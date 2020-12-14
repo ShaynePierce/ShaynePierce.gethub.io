@@ -64,7 +64,7 @@ async function makeConfirmation() {
         </tr>
         <tr>
             <th>Rental Cost:</th>
-            <td>${totalCost}</td>
+            <td>$${totalCost.toFixed(2)}</td>
         </tr>
         <tr>
             <th>Additional Info:</th>
