@@ -72,7 +72,7 @@ async function makeConfirmation() {
         </tr>
     </table>
 
-    <p>The total cost of your reservation will be <strong>$${((totalCost * 1.05) + 50).toFixed(2)}</strong> which includes 5% local tourism tax, and a reservation deposit fee of $50. Please have cash or a credit card ready at time of rental.</p> 
+    <p>The total cost of your reservation will be <strong>$${((totalCost * 1.05) + 50).toFixed(2)}</strong> which includes 5% local tourism tax, and a reservation deposit fee of $50. Payment can be made via Google Pay, cash, credit card, debit card, or PayPal. Payment must be receivd at least 24 hours before time of rental.</p> 
     <p>For any questions or concerns, please email reservations@scooterrentals.com</p> 
 
     `;
