@@ -63,12 +63,16 @@ async function makeConfirmation() {
             <td>${params.get('duration')}</td>
         </tr>
         <tr>
+            <th>Rental Cost:</th>
+            <td>${totalCost}</td>
+        </tr>
+        <tr>
             <th>Additional Info:</th>
             <td>${params.get('additional-info')}</td>
         </tr>
     </table>
 
-    <p>The total cost of your reservation will be <strong>$${(totalCost * 1.05).toFixed(2)}</strong> which includes 5% local tourism tax. Please have cash or a credit card ready at time of rental.</p> 
+    <p>The total cost of your reservation will be <strong>$${((totalCost * 1.05) + 50).toFixed(2)}</strong> which includes 5% local tourism tax, and a reservation deposit fee of $50. Please have cash or a credit card ready at time of rental.</p> 
     <p>For any questions or concerns, please email reservations@scooterrentals.com</p> 
 
     `;
